@@ -1,4 +1,13 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 .jumbotron {
 	color: white;
 	background-color: rgb(70,30,185);
+}
+
+img {
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
