@@ -15,7 +15,54 @@
 		<title>Bootstrap Practice</title>
 	</head>
 	<body>
-		<!-- Container adds padding around itself. Bootstrap grids require a container. -->
+		<!-- Container adds padding around itself. Bootstrap grids require a container. container-fluid takes up the full width of the page.-->
+		<div class="container">
+			<!-- Basic horizontal menu. -->
+			<ul class="list-inline">
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">About</a></li>
+			  <!-- Add a dropdown menu. -->
+			  <li class="dropdown">
+			    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact<span class="caret"></span></a>
+			    <ul class="dropdown-menu">
+			      <li><a href="#">Phone</a></li>
+			      <li><a href="#">Email</a></li>
+			    </ul>
+			  </li>
+			  <li><a href="#">Shop</a></li>
+		    </ul>
+		</div>
+
+		<div class="container">
+			<!-- Use nav-pills, nav-tabs. nav-pills have a rounded look. To center tabs add nav-justified to the class for ul .-->
+			 <ul class="nav nav-pills">
+				 <li class="active"><a data-toggle="tab" href="#calvin">Calvin</a></li>
+				 <li><a data-toggle="tab" href="#wolfie">Wolfie</a></li>
+				 <!-- Dropdown menu item -->
+				 <li class="dropdown">
+					 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Eleanor<span class="caret"></span></a>
+					 <ul class="dropdown-menu">
+						 <li><a data-toggle="tab" href="#preRescue">Past Eleanor</a></li>
+						 <li><a data-toggle="tab" href="#postRescue">Present Eleanor</a></li>
+					 </ul>
+				  </li>
+			  </ul>
+			  <div class="tab-content">
+				  <div id="calvin" class="tab-pane fade in active">
+					  <p>Calvin is the coolest senior dog ever.</p>
+				  </div>
+				  <div id="wolfie" class="tab-pane fade">
+					  <p>Wolfie was a fantastic foster dog who died of cancer way too young. Run free Wolfers.</p>
+				  </div>
+				  <div id="preRescue" class="tab-pane fade">
+					  <p>Before being rescued, Eleanor was severly underweight with horrible mange.</p>
+				  </div>
+				  <div id="postRescue" class="tab-pane fade">
+					  <p>Now Eleanor is healthy and lives with a wonderful, loving family on 18 glorious acres of land.</p>
+				  </div>
+			  </div>
+		  </div>
+
 		<div class="container">
 			<!-- page-header adds space around text and enlarges it. It also adds an underline at the end. -->
 			<div class="page-header">
@@ -28,12 +75,14 @@
 				</p>
 			</div>
 		</div>
+
 		<div class="container">
 			<!-- well class adds a rounded border around an element with a gray background color and some padding. -->
 			<div class="well">
 				Lorem ipsum dolor sit amet ferret. Bed bird food water left paw hamster parakeet whiskers ID tag walk chew lazy cat bird food. Park barky teeth whiskers catch toys running.
 			</div>
 		</div>
+
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -55,7 +104,8 @@
 					Puppy kitty ipsum dolor sit good dog kibble behavior good boy left paw stay head toys brush dragging licks nap window. Ball critters yawn Rover commands lol catz water catch good boy dog house. Pet aquarium Tigger shake litter fluffy field.
 				</div>
 			</div>
-		</div>
+		</div><br>
+
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -64,6 +114,47 @@
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<img src="../images/dog-and-human2.jpg" alt="responsive dog and human image" class="img-responsive"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- We can add text or buttons on the right and/or left of input elements. Use input-group-lg or input-group-sm for input sizing. -->
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="input-group input-group-lg">
+						<!-- addon is essentially a label, can be placed next to an input -->
+			  			<span class="input-group-addon">Name</span>
+			  			<input type="text" class="form-control" placeholder="Enter dog's name here">
+						<span class="input-group-btn">
+						  <button class="btn btn-primary" type="button">Enter</button>
+						</span>
+					</div><br>
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon">Age</span>
+						<input type="text" class="form-control" placeholder="Enter dog's age here">
+						<span class="input-group-btn">
+						  <button class="btn btn-primary" type="button">Enter</button>
+						</span>
+					</div><br>
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon">Breed(s)</span>
+						<input type="text" class="form-control" placeholder="Enter dog's breed(s) here">
+						<span class="input-group-btn">
+						  <button class="btn btn-primary" type="button">Enter</button>
+						</span>
+					</div><br>
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon">Favorite Food(s)</span>
+						<input type="text" class="form-control" placeholder="Enter dog's favorite food(s) here">
+						<span class="input-group-btn">
+						  <button class="btn btn-primary" type="button">Enter</button>
+						</span>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<!-- img-responsive class applies max-width: 100%;, height: auto; and display: block; to the image so that it scales nicely to the parent element -->
+					<img src="../images/dog-and-human3.jpg" alt="responsive dog and human image" class="img-responsive"/>
 				</div>
 			</div>
 		</div>
